@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Сайт визитка ККК</title>
+  <!-- Подключение CSS файла -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Подключение Анимации -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Подключение Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <!--Главаня оболочка страницы-->
+  <div class="page">
+    <!--Первый блок с фотографией и анимацией-->
+    <div class="box-wrap animate__animated animate__flipInX">
+      <div class="box-card">
+        <h3>Карымсаков Куаныш Кабиболаевич</h3>
+        <span>Web-программист / Frontend-разработчик</span>
+        <div class="box-card-item">
+          <p>
+            <i class="bi bi-envelope icon"></i>
+            <span>
+              <a href="mailto:sardar.kuna@gmail.com">sardar.kuna@gmail.com</a>
+            </span>
+          </p>
+          <p>
+            <i class="bi bi-skype icon"></i>
+            <span>
+              <a href="skype:kuna_php">kuna_php</a>
+            </span>
+          </p>
+          <p>
+            <i class="bi bi-telephone icon"></i>
+            <span>
+              <a href="tel:+77022457744">+7 (702) 245-77-44</a>
+            </span>
+          </p>
+          <p>
+            <i class="bi bi-geo icon"></i>
+            <span>
+              <a href="">Казахстан, Нур-Султан</a>
+            </span>
+          </p>
+          <hr />
+          <p><button class="btn">Написать мне</button></p>
+        </div>
+      </div>
+
+      <div class="box-img">
+        <img class="main-img" src="assets/main-img.jpg" alt="Карымсаков Куаныш Кабиболаевич" />
+      </div>
+    </div>
+    <!--END Первый блок с фотографией и анимацией-->
+
+    <!--Третий скрытый блок-->
+    <div class="box-form animate__animated animate__backInLeft">
+      <h3>Напишите мне</h3>
+      <form action="" method="POST" id="mailForm">
+        <div class="box-form-inner">
+          <div class="div-box-1">
+            <p>
+              <input type="text" id="name" name="name" placeholder="Введите Имя" />
+            </p>
+            <p>
+              <input type="email" id="email" name="email" placeholder="Введите Почту" />
+            </p>
+          </div>
+          <div class="div-box-2">
+            <textarea name="messege" id="messege" cols="" rows="4" placeholder="Текст сообщения..."></textarea>
+          </div>
+          <button type="button" class="btn-send">
+            Отправить
+          </button>
+        </div>
+      </form>
+    </div>
+    <!--END Третий скрытый блок-->
+
+    <!--Второй блок с описанием и технологиями-->
+    <div class="box-info animate__animated animate__flipInY">
+      <div class="box-item">
+        <h3>О себе</h3>
+        <p>
+          Начинающий веб-программист, знающий такие технологии как HTML, CSS,
+          JavaScript, PHP, имеющий высшее техническое образование в
+          области информационных технологии.
+        </p>
+        <p>
+          Моя цель стать полноценным специалистам в области
+          веб-программирования, для этого я ищу компанию в которой могу
+          развиваться в данном направлении.
+        </p>
+      </div>
+      <div class="box-skills">
+        <img class="img-box" src="assets/html-5.png" alt="html-5" />
+        <img class="img-box" src="assets/css-3.png" alt="css-3" />
+      </div>
+    </div>
+    <!--END Второй блок с описанием и технологиями-->
+  </div>
+  <!--END Главаня оболочка страницы-->
+
+  <!--Подключение JavaScript-->
+  <script defer src="js/all.min.js"></script>
+  <script defer src="js/main.js"></script>
+  <!--Подключение Jquery библиотеки-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+
+</html>

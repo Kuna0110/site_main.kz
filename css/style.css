@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Roboto', sans-serif;
+}
+/* Стилизация кнопки для всплытия блока */
+.btn {
+    display: inline-block;
+    padding: 10px 40px 10px 40px;
+    color: white;
+    background: #2296F3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #3dc4e6;
+}
+/* Стилизация кнопки для всплытия блока */
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    background: url('../assets/fon-img.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* - Первый блок - */
+.box-wrap {
+    display: flex;
+    justify-content: space-between;
+
+    width: 900px;
+    max-width: 100%;
+    height: 400px;
+
+    margin: 0 auto;
+    margin-top: 20px;
+
+    border-radius: 5px;
+    background: white;
+}
+.box-card {
+    padding: 20px;
+}
+.box-card h2 {
+    margin: 15px 0 0 0;
+}
+.box-card span {
+    color: blue;
+    font-weight: 300;
+}
+.icon {
+    font-size: 1.5rem;
+}
+.box-card-item p {
+    display: flex;
+    align-items: center;
+}
+.box-card-item span {
+    margin-left: 10px;
+    font-weight: bold;
+}
+.box-card-item a {
+    text-decoration: none;
+    color: black;
+}
+.box-card-item a:hover {
+    color: orange;
+}
+.box-img {
+    display: flex;
+}
+.main-img {
+    width: 360px;
+    height: 400px;
+    border-radius: 0 5px 5px 0;
+}
+
+/* Адаптивность первого блока */
+@media (max-width: 900px) {
+    .page {
+        height: auto;
+        padding: 5px;
+    }
+    .box-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        width: 380px;
+        height: auto;
+        transition: 0.5s;
+    }
+    .box-img {
+        display: none;
+        margin-top: 20px;
+    }
+    .main-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 0 0 5px 5px;
+    }
+}
+/* END */
+/* - Второй блок - */
+.box-info {
+    width: 900px;
+    max-width: 100%;
+    height: 300px;
+
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    border-radius: 5px;
+    background: white;
+}
+.box-info h3 {
+    margin: 0;
+    padding-top: 15px;
+}
+.box-item {
+    margin: 20px;
+}
+.box-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-box {
+    width: 100px;
+    height: 100px;
+}
+/* Адаптивность второго блока */
+@media (max-width: 900px) {
+    .box-info {
+        width: 380px;
+        height: 380px;
+        transition: 0.5s;
+    }
+    .box-skills {
+        justify-content: space-between;
+    }
+}
+/* END */
+/* Третий скрытый блок */
+.box-form {
+    display: none;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    width: 900px;
+    max-width: 100%;
+    height: 150px;
+    background: #fff;
+    border-radius: 5px;
+}
+.box-form h3 {
+    margin: 0;
+    padding: 15px 15px 5px 15px;
+    text-align: center;
+}
+.box-form-inner {
+    margin: 0;
+    padding: 0 15px 0 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.box-form-inner p {
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+}
+.div-box-1 {
+    width: 100%;
+}
+.div-box-1 input {
+    width: 100%;
+    outline: none;
+    padding: 5px;
+    background: #fec5a3;
+    border: none;
+    border-radius: 5px;
+}
+.div-box-2 {
+    width: 100%;
+}
+.div-box-2 textarea{
+    width: 100%;
+    outline: none;
+    padding: 5px;
+    color: #FFFFFF;
+    background: #fec5a3;
+    border: none;
+    border-radius: 5px;
+}
+.btn-send {
+    display: inline-block;
+    padding: 10px 40px 10px 40px;
+    color: white;
+    background: #2296F3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-send:hover {
+    background: #3dc4e6;
+}
+@media (max-width: 900px) {
+    .box-form {
+        width: 380px;
+        height: 280px;
+        transition: 0.5s;
+    }
+    .box-form-inner {
+        flex-direction: column;
+    }
+    .div-box-2 {
+        margin-top: 5px;
+    }
+    .btn-send {
+        margin-top: 5px;
+    }
+}
